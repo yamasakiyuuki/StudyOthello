@@ -1,0 +1,2 @@
+# StudyOthello
+オセロアプリ作成
