@@ -6,4 +6,9 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Content\Img\" />
+    <Folder Include="Common\" />
+  </ItemGroup>
+
 </Project>

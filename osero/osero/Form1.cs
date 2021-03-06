@@ -15,6 +15,9 @@ namespace osero
         public Form1()
         {
             InitializeComponent();
+            //for (int i = 0; i < 64; i++) {
+            //this.pictureBoxList[i] = this.pictureBox1
+            //}
         }
 
     }
