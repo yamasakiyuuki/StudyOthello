@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Git\\勉強\\StudyOthello\\osero\\osero\\osero.csproj": {}
+    "C:\\ゲーム作成\\StudyOthello\\osero\\osero\\osero.csproj": {}
   },
   "projects": {
-    "F:\\Git\\勉強\\StudyOthello\\osero\\osero\\osero.csproj": {
+    "C:\\ゲーム作成\\StudyOthello\\osero\\osero\\osero.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Git\\勉強\\StudyOthello\\osero\\osero\\osero.csproj",
+        "projectUniqueName": "C:\\ゲーム作成\\StudyOthello\\osero\\osero\\osero.csproj",
         "projectName": "osero",
-        "projectPath": "F:\\Git\\勉強\\StudyOthello\\osero\\osero\\osero.csproj",
-        "packagesPath": "C:\\Users\\裕貴\\.nuget\\packages\\",
-        "outputPath": "F:\\Git\\勉強\\StudyOthello\\osero\\osero\\obj\\",
+        "projectPath": "C:\\ゲーム作成\\StudyOthello\\osero\\osero\\osero.csproj",
+        "packagesPath": "C:\\Users\\taka4\\.nuget\\packages\\",
+        "outputPath": "C:\\ゲーム作成\\StudyOthello\\osero\\osero\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\裕貴\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\taka4\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -58,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
