@@ -22,6 +22,8 @@ namespace osero
             //for (int i = 0; i < 64; i++) {
             //this.pictureBoxList[i] = this.pictureBox1
             //}
+            CreatePictureBoxes();
+            GameStart();
         }
 
         private void pictureBox_Click(object sender, EventArgs e)
@@ -68,9 +70,9 @@ namespace osero
             //toolStripStatusLabel1.Text = "あなたの手番です。";
         }
 
-        private void startToolStripMenuItem_Click(object sender, EventArgs e)
+        /*private void startToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GameStart();
-        }
+        }*/
     }
 }
