@@ -14,7 +14,7 @@ namespace osero
     public partial class Form1 : Form
     {
         Point leftTopPoint = new Point(50, 50);
-        Stone[,] StonePosition = new Stone[8, 8];
+        public static Stone[,] StonePosition = new Stone[8, 8];
 
         public Form1()
         {
@@ -70,9 +70,9 @@ namespace osero
             //toolStripStatusLabel1.Text = "あなたの手番です。";
         }
 
-        /*private void startToolStripMenuItem_Click(object sender, EventArgs e)
+        private void startToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GameStart();
-        }*/
+        }
     }
 }
