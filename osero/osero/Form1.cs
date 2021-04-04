@@ -23,7 +23,7 @@ namespace osero
             //this.pictureBoxList[i] = this.pictureBox1
             //}
             CreatePictureBoxes();
-            GameStart();
+            //GameStart();
         }
 
         private void pictureBox_Click(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace osero
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CreatePictureBoxes();
+            //CreatePictureBoxes();
             GameStart();
         }
         void CreatePictureBoxes()
@@ -47,9 +47,10 @@ namespace osero
                     stone.Size = new Size(70, 70);
                     stone.BorderStyle = BorderStyle.FixedSingle;
                     stone.Location = new Point(leftTopPoint.X + colum * 70, leftTopPoint.Y + row * 70);
-                    StonePosition[colum, row] = stone;
-                    //stone.StoneClick += Box_PictureBoxExClick;
+                    //StonePosition[colum, row] = stone;
+                    stone.StoneClick += osero.Common.Form1.Box_PictureBoxExClick;
                     stone.BackColor = Color.Green;
+                    StonePosition[colum, row] = stone;
                 }
             }
         }
@@ -66,7 +67,7 @@ namespace osero
             StonePosition[3, 4].StoneColor = StoneColor.White;
             StonePosition[4, 3].StoneColor = StoneColor.White;
 
-            //isYour = true;
+            osero.Common.Form1.isYour = true;
             //toolStripStatusLabel1.Text = "あなたの手番です。";
         }
 

@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace osero.Common
 {
-    public partial class Form1 : Form
+    partial class Form1 : Form
     {
-        List<Stone> GetReverseOnPutUp(int x, int y, StoneColor color)
+        static List<Stone> GetReverseOnPutUp(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
             StoneColor enemyColor = StoneColor.None;
@@ -43,7 +43,7 @@ namespace osero.Common
             }
         }
 
-        List<Stone> GetReverseOnPutDown(int x, int y, StoneColor color)
+        static List<Stone> GetReverseOnPutDown(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
             StoneColor enemyColor = StoneColor.None;
@@ -79,7 +79,7 @@ namespace osero.Common
             }
         }
 
-        List<Stone> GetReverseOnPutLeft(int x, int y, StoneColor color)
+        static List<Stone> GetReverseOnPutLeft(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
             StoneColor enemyColor = StoneColor.None;
@@ -115,7 +115,7 @@ namespace osero.Common
             }
         }
 
-        List<Stone> GetReverseOnPutRight(int x, int y, StoneColor color)
+        static List<Stone> GetReverseOnPutRight(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
             StoneColor enemyColor = StoneColor.None;
@@ -151,7 +151,7 @@ namespace osero.Common
             }
         }
 
-        List<Stone> GetReverseOnPutLeftTop(int x, int y, StoneColor color)
+        static List<Stone> GetReverseOnPutLeftTop(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
             StoneColor enemyColor = StoneColor.None;
@@ -193,7 +193,7 @@ namespace osero.Common
             }
         }
 
-        List<Stone> GetReverseOnPutRightTop(int x, int y, StoneColor color)
+        static List<Stone> GetReverseOnPutRightTop(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
             StoneColor enemyColor = StoneColor.None;
@@ -235,7 +235,7 @@ namespace osero.Common
             }
         }
 
-        List<Stone> GetReverseOnPutRightDown(int x, int y, StoneColor color)
+        static List<Stone> GetReverseOnPutRightDown(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
             StoneColor enemyColor = StoneColor.None;
@@ -277,7 +277,7 @@ namespace osero.Common
             }
         }
 
-        List<Stone> GetReverseOnPutLeftDown(int x, int y, StoneColor color)
+        static List<Stone> GetReverseOnPutLeftDown(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
             StoneColor enemyColor = StoneColor.None;

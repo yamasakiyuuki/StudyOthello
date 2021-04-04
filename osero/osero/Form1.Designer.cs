@@ -56,7 +56,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox[] pictureBoxList;
+        //private System.Windows.Forms.PictureBox[] pictureBoxList;
     }
 }
 

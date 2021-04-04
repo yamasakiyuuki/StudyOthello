@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace osero.Common
 {
-    public partial class Form1 : Form
+    partial class Form1 : Form
     {
-        bool isYour = true;
-        async private void Box_PictureBoxExClick(int x, int y)
+        public static bool isYour = true;
+        async public static void Box_PictureBoxExClick(int x, int y)
         {
             // 自分の手番か確認する
             if (!isYour)
@@ -26,6 +27,9 @@ namespace osero.Common
                 isYour = false;
 
                 // コンピュータの手番（次回）
+                await Task.Delay(1000);
+
+                EnemyThink();
             }
             else { }
                 //toolStripStatusLabel1.Text = "ここには打てません";

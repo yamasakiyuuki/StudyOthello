@@ -7,7 +7,7 @@ namespace osero.Common
 {
     public partial class Form1 : Form
     {
-        List<Stone> GetRevarseStones(int x, int y, StoneColor stoneColor)
+        static List<Stone> GetRevarseStones(int x, int y, StoneColor stoneColor)
         {
             List<Stone> stones = new List<Stone>();
             stones.AddRange(GetReverseOnPutUp(x, y, stoneColor)); // 上方向に挟めているものを取得

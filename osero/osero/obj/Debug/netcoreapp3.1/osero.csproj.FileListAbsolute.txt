@@ -28,3 +28,4 @@ C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.csproj
 C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.dll
 C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.pdb
 C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.genruntimeconfig.cache
+C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.Common.Form1.resources

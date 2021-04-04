@@ -30,7 +30,7 @@ namespace osero.Common
 
         public delegate void StoneClickHandler(int x, int y);
         public event StoneClickHandler StoneClick;
-        private void Stone_Click(object sender, EventArgs e)
+        public void Stone_Click(object sender, EventArgs e)
         {
             StoneClick?.Invoke(Colum, Row);
         }
