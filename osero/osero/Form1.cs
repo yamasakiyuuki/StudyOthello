@@ -15,10 +15,11 @@ namespace osero
     {
         Point leftTopPoint = new Point(50, 50);
         public static Stone[,] StonePosition = new Stone[8, 8];
-
+        public static System.Windows.Forms.Label komaNumber;
         public Form1()
         {
             InitializeComponent();
+            komaNumber = this.label1;
             //for (int i = 0; i < 64; i++) {
             //this.pictureBoxList[i] = this.pictureBox1
             //}
@@ -35,6 +36,7 @@ namespace osero
         {
             //CreatePictureBoxes();
             GameStart();
+            osero.Common.Form1.StoneNumber();
         }
         void CreatePictureBoxes()
         {

@@ -19,6 +19,9 @@
     <Compile Update="Common\Stone.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="Common\stoneNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

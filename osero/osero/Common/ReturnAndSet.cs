@@ -24,12 +24,14 @@ namespace osero.Common
             {
                 osero.Form1.StonePosition[x, y].StoneColor = StoneColor.Black;
                 stones.Select(xx => xx.StoneColor = StoneColor.Black).ToList();
+                StoneNumber();
                 isYour = false;
 
                 // コンピュータの手番（次回）
                 await Task.Delay(1000);
 
                 EnemyThink();
+                StoneNumber();
             }
             else { }
                 //toolStripStatusLabel1.Text = "ここには打てません";

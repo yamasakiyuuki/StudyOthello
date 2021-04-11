@@ -19,7 +19,6 @@ C:\ゲーム作成\StudyOthello\osero\osero\bin\Debug\netcoreapp3.1\osero.runtim
 C:\ゲーム作成\StudyOthello\osero\osero\bin\Debug\netcoreapp3.1\osero.runtimeconfig.dev.json
 C:\ゲーム作成\StudyOthello\osero\osero\bin\Debug\netcoreapp3.1\osero.dll
 C:\ゲーム作成\StudyOthello\osero\osero\bin\Debug\netcoreapp3.1\osero.pdb
-C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.csprojAssemblyReference.cache
 C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.Form1.resources
 C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.csproj.GenerateResource.cache
 C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.AssemblyInfoInputs.cache
@@ -29,3 +28,4 @@ C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.dll
 C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.pdb
 C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.genruntimeconfig.cache
 C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.Common.Form1.resources
+C:\ゲーム作成\StudyOthello\osero\osero\obj\Debug\netcoreapp3.1\osero.csprojAssemblyReference.cache

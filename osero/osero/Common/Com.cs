@@ -54,8 +54,9 @@ namespace osero.Common
                 if (count > 0)
                 {
                     isYour = true;
-                    if (isComPassed) { 
-                    //toolStripStatusLabel1.Text = "コンピュータはパスしました。あなたの手番です。";
+                    if (isComPassed) {
+                        //toolStripStatusLabel1.Text = "コンピュータはパスしました。あなたの手番です。";
+                        return;
                     }
 
                     else
