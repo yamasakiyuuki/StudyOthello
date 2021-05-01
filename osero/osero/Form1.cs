@@ -82,5 +82,15 @@ namespace osero
         {
             osero.Common.Form1.Surrender();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var grayStones = osero.Form1.StonePosition.Cast<Stone>();
+            grayStones = grayStones.Where(xx => xx.StoneColor == StoneColor.Gray);
+            var hintPositions = grayStones.ToList();
+            foreach (Stone stone in hintPositions)
+                stone.StoneColor = StoneColor.None;
+            osero.Common.Form1.Hint();
+        }
     }
 }

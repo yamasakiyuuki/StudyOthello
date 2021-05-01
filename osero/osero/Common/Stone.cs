@@ -48,6 +48,8 @@ namespace osero.Common
                     BackColor = Color.White;
                 if (value == StoneColor.None)
                     BackColor = Color.Green;
+                if (value == StoneColor.Gray)
+                    BackColor = Color.Gray;
             }
         }
     }
@@ -56,5 +58,6 @@ namespace osero.Common
         None = 0,
         Black = 1,
         White = 2,
+        Gray = 3,
     }
 }

@@ -16,12 +16,23 @@ namespace osero.Common
             if (!isYour)
                 return;
 
+            var grayStones = osero.Form1.StonePosition.Cast<Stone>();
+            grayStones = grayStones.Where(xx => xx.StoneColor == StoneColor.Gray);
+            var hintPositions = grayStones.ToList();
+            foreach (Stone stone in hintPositions)
+                stone.StoneColor = StoneColor.None;
             // 着手可能な場所か調べる
             List<Stone> stones = GetRevarseStones(x, y, StoneColor.Black);
 
             // 着手可能であれば石を置き、挟んだ石をひっくり返す
             if (stones.Count != 0)
             {
+                ////ヒントを元に戻す
+                //var grayStones = osero.Form1.StonePosition.Cast<Stone>();
+                //grayStones = grayStones.Where(xx => xx.StoneColor == StoneColor.Gray);
+                //var hintPositions = grayStones.ToList();
+                //foreach (Stone stone in hintPositions)
+                //    stone.StoneColor = StoneColor.None;
                 osero.Form1.StonePosition[x, y].StoneColor = StoneColor.Black;
                 stones.Select(xx => xx.StoneColor = StoneColor.Black).ToList();
                 StoneNumber();

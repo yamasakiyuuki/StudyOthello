@@ -7,6 +7,9 @@
     <Compile Update="Common\gamesetcs.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Common\Hint.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Common\ReturnAndSet.cs">
       <SubType>Form</SubType>
     </Compile>
