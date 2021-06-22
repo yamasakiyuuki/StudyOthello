@@ -30,6 +30,7 @@ namespace osero.Common
                     osero.Form1.StonePosition[stone.Colum, stone.Row].StoneColor = StoneColor.White;
                     List<Stone> stones1 = GetRevarseStones(stone.Colum, stone.Row, StoneColor.White);
                     stones1.Select(xx => xx.StoneColor = StoneColor.White).ToList();
+                    osero.Form1.BoardStatus[osero.Form1.num++] = osero.Common.Form1.BoardInf(stone, stones1);
                 }
                 else
                 {

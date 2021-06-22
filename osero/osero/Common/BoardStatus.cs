@@ -7,7 +7,7 @@ namespace osero.Common
 {
     public class BoardStatus
     {
-        Stone Stone = null;
-        Stone[] ReturnStone = null;
+        public Stone PutStone;
+        public List<Stone> ReturnStones;
     }
 }

@@ -15,11 +15,15 @@ namespace osero
     {
         Point leftTopPoint = new Point(50, 50);
         public static Stone[,] StonePosition = new Stone[8, 8];
+        public static BoardStatus[] BoardStatus = new BoardStatus[60];
         public static System.Windows.Forms.Label komaNumber;
+        public static System.Windows.Forms.Label boardInf;
+        public static int num = 0;
         public Form1()
         {
             InitializeComponent();
             komaNumber = this.label1;
+            boardInf = this.label2;
             //for (int i = 0; i < 64; i++) {
             //this.pictureBoxList[i] = this.pictureBox1
             //}
@@ -37,6 +41,8 @@ namespace osero
             //CreatePictureBoxes();
             GameStart();
             osero.Common.Form1.StoneNumber();
+            string reset = "打ち手(行,列)左上から0,0 色\n";
+            boardInf.Text = reset;
         }
         void CreatePictureBoxes()
         {
