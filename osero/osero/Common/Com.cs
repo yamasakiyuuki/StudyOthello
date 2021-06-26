@@ -31,6 +31,12 @@ namespace osero.Common
                     List<Stone> stones1 = GetRevarseStones(stone.Colum, stone.Row, StoneColor.White);
                     stones1.Select(xx => xx.StoneColor = StoneColor.White).ToList();
                     osero.Form1.BoardStatus[osero.Form1.num++] = osero.Common.Form1.BoardInf(stone, stones1);
+
+                    //var grayStones = osero.Form1.StonePosition.Cast<Stone>();
+                    //grayStones = grayStones.Where(xx => xx.StoneColor == StoneColor.Gray);
+                    //var hintPositions = grayStones.ToList();
+                    //foreach (Stone stone1 in hintPositions)
+                    //    stone1.StoneColor = StoneColor.None;
                 }
                 else
                 {

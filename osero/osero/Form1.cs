@@ -17,13 +17,15 @@ namespace osero
         public static Stone[,] StonePosition = new Stone[8, 8];
         public static BoardStatus[] BoardStatus = new BoardStatus[60];
         public static System.Windows.Forms.Label komaNumber;
-        public static System.Windows.Forms.Label boardInf;
+        //public static System.Windows.Forms.Label board;
+        public static System.Windows.Forms.ListBox boardInf;
         public static int num = 0;
         public Form1()
         {
             InitializeComponent();
             komaNumber = this.label1;
-            boardInf = this.label2;
+            //board = this.label2;
+            boardInf = this.listBox1;
             //for (int i = 0; i < 64; i++) {
             //this.pictureBoxList[i] = this.pictureBox1
             //}
@@ -41,8 +43,10 @@ namespace osero
             //CreatePictureBoxes();
             GameStart();
             osero.Common.Form1.StoneNumber();
-            string reset = "打ち手(行,列)左上から0,0 色\n";
-            boardInf.Text = reset;
+            // string reset = "打ち手(行,列) 色(左上から0,0)\n";
+            // board.Text = reset;
+            boardInf.Items.Clear();
+            num = 0;
         }
         void CreatePictureBoxes()
         {
@@ -97,6 +101,11 @@ namespace osero
             foreach (Stone stone in hintPositions)
                 stone.StoneColor = StoneColor.None;
             osero.Common.Form1.Hint();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            osero.Common.Form1.Wait();
         }
     }
 }

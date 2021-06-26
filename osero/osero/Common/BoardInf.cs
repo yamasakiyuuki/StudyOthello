@@ -22,7 +22,7 @@ namespace osero.Common
                 Color = "白";
             }
             BoardInf = String.Format("{0}手目({1},{2}){3}\n ",osero.Form1.num, stone.Colum, stone.Row, Color);
-            osero.Form1.boardInf.Text += BoardInf;
+            osero.Form1.boardInf.Items.Add(BoardInf);
             return boardStatuses;
         }
 

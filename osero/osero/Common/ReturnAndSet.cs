@@ -12,6 +12,10 @@ namespace osero.Common
         public static bool isYour = true;
         async public static void Box_PictureBoxExClick(int x, int y)
         {
+            if (osero.Form1.StonePosition[x, y].StoneColor == StoneColor.Black ||
+                osero.Form1.StonePosition[x, y].StoneColor == StoneColor.White)
+                return;
+            
             // 自分の手番か確認する
             if (!isYour)
                 return;
@@ -41,9 +45,18 @@ namespace osero.Common
 
                 // コンピュータの手番（次回）
                 await Task.Delay(1000);
-
+                grayStones = grayStones.Where(xx => xx.StoneColor == StoneColor.Gray);
+                hintPositions = grayStones.ToList();
+                foreach (Stone stone1 in hintPositions)
+                    stone1.StoneColor = StoneColor.None;
+                if (isYour)
+                    return;
                 EnemyThink();
                 StoneNumber();
+                
+                //grayStones = grayStones.Where(xx => xx.StoneColor == StoneColor.Gray);
+                //foreach (Stone stone1 in hintPositions)
+                //    stone1.StoneColor = StoneColor.None;
             }
             else { }
                 //toolStripStatusLabel1.Text = "ここには打てません";
