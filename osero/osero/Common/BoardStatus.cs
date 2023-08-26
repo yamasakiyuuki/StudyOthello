@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace osero.Common
 {
+    /// <summary>
+    /// マスの情報のクラス
+    /// </summary>
     public class BoardStatus
     {
         public Stone PutStone;

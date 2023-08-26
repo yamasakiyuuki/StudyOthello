@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Windows.Forms;
 
 namespace osero.Common
 {
     partial class Form1 : Form
     {
+        /// <summary>
+        /// 盤面の譜面を表示
+        /// </summary>
+        /// <param name="stone"></param>
+        /// <param name="stones"></param>
+        /// <returns></returns>
         public static BoardStatus BoardInf(Stone stone, List<Stone> stones) {
             BoardStatus boardStatuses = new BoardStatus();
             boardStatuses.PutStone = stone;

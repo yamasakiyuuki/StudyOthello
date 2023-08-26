@@ -1,14 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using osero;
 
 namespace osero.Common
 {
     partial class Form1 : Form
     {
+        /// <summary>
+        /// 配置されている黒白の石の数を表示する関数
+        /// </summary>
         public static void StoneNumber()
         { 
             var stones = osero.Form1.StonePosition.Cast<Stone>();

@@ -1,11 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace osero.Common
 {
+    /// <summary>
+    /// 盤面のマスのクラス
+    /// </summary>
     public class Stone : PictureBox
     {
         StoneColor stoneColor = StoneColor.None;
@@ -53,11 +54,15 @@ namespace osero.Common
             }
         }
     }
+
+    /// <summary>
+    /// マスの色
+    /// </summary>
     public enum StoneColor
     {
-        None = 0,
-        Black = 1,
-        White = 2,
-        Gray = 3,
+        None = 0,//未配置
+        Black = 1,//黒
+        White = 2,//白
+        Gray = 3,//ヒント
     }
 }

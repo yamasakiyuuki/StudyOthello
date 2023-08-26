@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace osero.Common
 {
     partial class Form1 : Form
     {
+        /// <summary>
+        /// //上側で反転される石の判定を行う関数
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="color"></param>
+        /// <returns></returns>
         static List<Stone> GetReverseOnPutUp(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
@@ -18,6 +23,7 @@ namespace osero.Common
 
             if (y - 1 < 0)
                 return stones;
+
 
             var s = osero.Form1.StonePosition[x, y - 1];
             if (s.StoneColor == color || s.StoneColor == StoneColor.None)
@@ -43,6 +49,13 @@ namespace osero.Common
             }
         }
 
+        /// <summary>
+        /// 下側で反転される石の判定を行う関数
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="color"></param>
+        /// <returns></returns>
         static List<Stone> GetReverseOnPutDown(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
@@ -79,6 +92,13 @@ namespace osero.Common
             }
         }
 
+        /// <summary>
+        /// 左側で反転される石の判定を行う関数
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="color"></param>
+        /// <returns></returns>
         static List<Stone> GetReverseOnPutLeft(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
@@ -115,6 +135,13 @@ namespace osero.Common
             }
         }
 
+        /// <summary>
+        /// 右側で反転される石の判定を行う関数
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="color"></param>
+        /// <returns></returns>
         static List<Stone> GetReverseOnPutRight(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
@@ -151,6 +178,13 @@ namespace osero.Common
             }
         }
 
+        /// <summary>
+        /// 左斜め上側で反転される石の判定を行う関数
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="color"></param>
+        /// <returns></returns>
         static List<Stone> GetReverseOnPutLeftTop(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
@@ -193,6 +227,13 @@ namespace osero.Common
             }
         }
 
+        /// <summary>
+        /// 右斜め上側で反転される石の判定を行う関数
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="color"></param>
+        /// <returns></returns>
         static List<Stone> GetReverseOnPutRightTop(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
@@ -235,6 +276,13 @@ namespace osero.Common
             }
         }
 
+        /// <summary>
+        /// 右斜め下側で反転される石の判定を行う関数
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="color"></param>
+        /// <returns></returns>
         static List<Stone> GetReverseOnPutRightDown(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();
@@ -277,6 +325,13 @@ namespace osero.Common
             }
         }
 
+        /// <summary>
+        /// /// 左斜め下側で反転される石の判定を行う関数
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="color"></param>
+        /// <returns></returns>
         static List<Stone> GetReverseOnPutLeftDown(int x, int y, StoneColor color)
         {
             List<Stone> stones = new List<Stone>();

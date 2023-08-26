@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace osero.Common
 {
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// 石の反転処理の関数
+        /// </summary>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
+        /// <param name="stoneColor"></param>
+        /// <returns></returns>
         static List<Stone> GetRevarseStones(int x, int y, StoneColor stoneColor)
         {
             List<Stone> stones = new List<Stone>();

@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace osero.Common
 {
     partial class Form1
     {
+        /// <summary>
+        /// 降参を行う関数
+        /// </summary>
         public static void Surrender()
         {
             DialogResult result = MessageBox.Show(
@@ -19,12 +18,10 @@ namespace osero.Common
             {
                 return;
             }
-            //var stones = osero.Form1.StonePosition.Cast<Stone>();
 
-            //int blackCount = stones.Count(xx => xx.StoneColor == StoneColor.Black);
-            //int whiteCount = stones.Count(xx => xx.StoneColor == StoneColor.White);
-
+            //降参後に打てないようにする
             isYour = false;
+
             string str = "";
             str = "あなたの負けです";
             MessageBox.Show(str);
