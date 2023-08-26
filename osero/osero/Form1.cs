@@ -67,7 +67,7 @@ namespace osero
             }
         }
 
-        public void GameStart()
+        void GameStart()
         {
             button4.Enabled = false;
             var stones = StonePosition.Cast<Stone>();
