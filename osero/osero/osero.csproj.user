@@ -1,8 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <ItemGroup>
-        <Compile Update="Form1.cs">
-            <SubType>Form</SubType>
-        </Compile>
-    </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Common\BoardInf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Common\Com.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Common\gamesetcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Common\Hint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Common\ReturnAndSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Common\Reverse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Common\ReverseStone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Common\Stone.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Common\stoneNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Common\Surrender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Common\Wait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>
