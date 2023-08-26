@@ -35,7 +35,7 @@ namespace osero
 
         private void pictureBox_Click(object sender, EventArgs e)
         {
-          //  this.pictureBox1.BackColor="brac"   
+            //  this.pictureBox1.BackColor="brac"   
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -93,6 +93,7 @@ namespace osero
             osero.Common.Form1.Surrender();
         }
 
+
         private void button3_Click(object sender, EventArgs e)
         {
             var grayStones = osero.Form1.StonePosition.Cast<Stone>();
@@ -103,9 +104,17 @@ namespace osero
             osero.Common.Form1.Hint();
         }
 
+        /// <summary>
+        /// 待ったボタンのクリック処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button4_Click(object sender, EventArgs e)
         {
             osero.Common.Form1.Wait();
+            osero.Common.Form1.Wait();
+
+
         }
     }
 }
