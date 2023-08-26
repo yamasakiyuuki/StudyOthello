@@ -21,29 +21,30 @@ namespace osero.Common
             if (boardStatuses.PutStone.StoneColor == StoneColor.Black ||
                 boardStatuses.PutStone.StoneColor == StoneColor.White)
             {
-                osero.Form1.boardInf.Items.Add("待ったを行いました。");
                 if (boardStatuses.PutStone.StoneColor == StoneColor.Black)
                 {
-                    isYour = true;
+                    //isYour = true;
                     foreach (Stone stone in boardStatuses.ReturnStones)
                         stone.StoneColor = StoneColor.White;
+                    osero.Form1.boardInf.Items.Add("待ったを行いました。");
                 }
                 if (boardStatuses.PutStone.StoneColor == StoneColor.White)
                 {
                     foreach (Stone stone in boardStatuses.ReturnStones)
                         stone.StoneColor = StoneColor.Black;
 
-                    DialogResult result = MessageBox.Show(
-                        "待ったを続けますか", "確認",
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question
-                    );
-                    if(result == DialogResult.No)
-                    {
-                        EnemyThink();
-                        StoneNumber();
-                    }
+                    //DialogResult result = MessageBox.Show(
+                    //    "待ったしました", "確認",
+                    //MessageBoxButtons.YesNo,
+                    //MessageBoxIcon.Question
+                    //);
+                    //if(result == DialogResult.No)
+                    //{
+                    //    EnemyThink();
+                    //    StoneNumber();
+                    //}
                 }
+                isYour = true;
                 boardStatuses.PutStone.StoneColor = StoneColor.None;
                 StoneNumber();
                 var grayStones = osero.Form1.StonePosition.Cast<Stone>();
@@ -51,7 +52,9 @@ namespace osero.Common
                 var hintPositions = grayStones.ToList();
                 foreach (Stone stone in hintPositions)
                     stone.StoneColor = StoneColor.None;
+                
             }
+
             return;
         }
     }

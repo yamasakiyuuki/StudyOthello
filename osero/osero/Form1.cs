@@ -67,8 +67,9 @@ namespace osero
             }
         }
 
-        void GameStart()
+        public void GameStart()
         {
+            button4.Enabled = false;
             var stones = StonePosition.Cast<Stone>();
             foreach (Stone stone in stones)
                 stone.StoneColor = StoneColor.None;
@@ -81,19 +82,32 @@ namespace osero
 
             osero.Common.Form1.isYour = true;
             //toolStripStatusLabel1.Text = "あなたの手番です。";
-        }
 
+        }
+        /// <summary>
+        /// スタートボタンのクリック処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void startToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GameStart();
         }
-
+        /// <summary>
+        /// 降参ボタンのクリック処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
             osero.Common.Form1.Surrender();
+            button4.Enabled = false;
         }
-
-
+        /// <summary>
+        /// ヒントボタンのクリック処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button3_Click(object sender, EventArgs e)
         {
             var grayStones = osero.Form1.StonePosition.Cast<Stone>();
@@ -109,11 +123,22 @@ namespace osero
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void button4_Click(object sender, EventArgs e)
+        private async void button4_Click(object sender, EventArgs e)
         {
+            if (osero.Form1.num == 0) return;
+
+            if (!osero.Common.Form1.isYour)
+            {
+                await Task.Delay(1000);
+            }
             osero.Common.Form1.Wait();
             osero.Common.Form1.Wait();
 
+            DialogResult result = MessageBox.Show(
+                    "待ったがされました", "確認",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Question
+            );
 
         }
     }

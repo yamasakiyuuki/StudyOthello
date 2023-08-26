@@ -45,7 +45,7 @@
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(134, 77);
             button1.TabIndex = 0;
-            button1.Text = "Start";
+            button1.Text = "スタート";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -75,7 +75,7 @@
             button3.Name = "button3";
             button3.Size = new System.Drawing.Size(73, 68);
             button3.TabIndex = 4;
-            button3.Text = "hint";
+            button3.Text = "ヒント";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
@@ -100,6 +100,7 @@
             // 
             // button4
             // 
+            button4.Enabled = false;
             button4.Location = new System.Drawing.Point(634, 364);
             button4.Name = "button4";
             button4.Size = new System.Drawing.Size(131, 69);

@@ -44,7 +44,7 @@ namespace osero.Common
                 osero.Form1.BoardStatus[osero.Form1.num++] = osero.Common.Form1.BoardInf(osero.Form1.StonePosition[x, y], stones);
 
                 // コンピュータの手番（次回）
-                await Task.Delay(1000);
+                //await Task.Delay(500);
                 grayStones = grayStones.Where(xx => xx.StoneColor == StoneColor.Gray);
                 hintPositions = grayStones.ToList();
                 foreach (Stone stone1 in hintPositions)
